@@ -1,63 +1,67 @@
 import 'package:dopamine_diary/core/common/cubits/app_user/app_user_cubit.dart';
+import 'package:dopamine_diary/core/common/cubits/locale/locale_cubit.dart';
 import 'package:dopamine_diary/core/theme/theme.dart';
 import 'package:dopamine_diary/features/auth/presentation/bloc/auth_bloc.dart';
-import 'package:dopamine_diary/features/auth/presentation/pages/login_page.dart';
-import 'package:dopamine_diary/features/blog/presentation/bloc/blog_bloc.dart';
-import 'package:dopamine_diary/features/blog/presentation/pages/blog_page.dart';
+import 'package:dopamine_diary/features/diary/presentation/analytics/bloc/analytics_bloc.dart';
+import 'package:dopamine_diary/features/diary/presentation/detox/bloc/detox_bloc.dart';
+import 'package:dopamine_diary/features/diary/presentation/home/bloc/home_bloc.dart';
+import 'package:dopamine_diary/features/diary/presentation/log/bloc/activity_bloc.dart';
+import 'package:dopamine_diary/features/diary/presentation/main_scaffold.dart';
+import 'package:dopamine_diary/features/diary/presentation/onboarding/bloc/onboarding_bloc.dart';
 import 'package:dopamine_diary/init_dependencies.dart';
+import 'package:dopamine_diary/l10n/generated/app_localizations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:intl/date_symbol_data_local.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await initDependencies();
-  runApp(MultiBlocProvider(
-    providers: [
-      BlocProvider(
-        create: (_) => serviceLocator<AppUserCubit>(),
-      ),
-      BlocProvider(
-        create: (_) => serviceLocator<AuthBloc>(),
-      ),
-      BlocProvider(
-        create: (_) => serviceLocator<BlogBloc>(),
-      ),
-    ],
-    child: const MyApp(),
-  ));
+  // Init intl cho cả vi và en để DateFormat('E', '<locale>') chạy đúng.
+  await initializeDateFormatting('vi', null);
+  await initializeDateFormatting('en', null);
+  runApp(
+    MultiBlocProvider(
+      providers: [
+        // Core
+        BlocProvider(create: (_) => serviceLocator<AppUserCubit>()),
+        BlocProvider(create: (_) => serviceLocator<LocaleCubit>()),
+        BlocProvider(create: (_) => serviceLocator<AuthBloc>()),
+        // Dopamine
+        BlocProvider(create: (_) => serviceLocator<HomeBloc>()),
+        BlocProvider(create: (_) => serviceLocator<ActivityBloc>()),
+        BlocProvider(create: (_) => serviceLocator<AnalyticsBloc>()),
+        BlocProvider(create: (_) => serviceLocator<DetoxBloc>()),
+        BlocProvider(create: (_) => serviceLocator<OnboardingBloc>()),
+      ],
+      child: const DopamineDiaryApp(),
+    ),
+  );
 }
 
-class MyApp extends StatefulWidget {
-  const MyApp({super.key});
-
-  @override
-  State<MyApp> createState() => _MyAppState();
-}
-
-class _MyAppState extends State<MyApp> {
-  @override
-  void initState() {
-    super.initState();
-    context.read<AuthBloc>().add(AuthIsUserLoggedIn());
-  }
+class DopamineDiaryApp extends StatelessWidget {
+  const DopamineDiaryApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Blog App',
-      theme: AppTheme.darkThemeMode,
-      home: BlocSelector<AppUserCubit, AppUserState, bool>(
-        selector: (state) {
-          return state is AppUserLoggedIn;
-        },
-        builder: (context, isLoggedIn) {
-          if (isLoggedIn) {
-            return const BlogPage();
-          }
-          return const LoginPage();
-        },
-      ),
+    return BlocBuilder<LocaleCubit, Locale?>(
+      builder: (context, locale) {
+        return MaterialApp(
+          debugShowCheckedModeBanner: false,
+          title: 'Dopamine Diary',
+          theme: AppTheme.lightThemeMode,
+          locale: locale,
+          localizationsDelegates: const [
+            AppLocalizations.delegate,
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: AppLocalizations.supportedLocales,
+          home: const MainScaffold(),
+        );
+      },
     );
   }
 }

@@ -1,10 +1,6 @@
+/// Hằng số dùng chung toàn app.
 class Constants {
-  static const List<String> topics = [
-    'Technology',
-    'Business',
-    'Programming',
-    'Entertainment',
-  ];
+  Constants._();
 
-  static const noConnectionErrorMessage = 'Not connected to a network!';
+  static const String noConnectionErrorMessage = 'Not connected to a network!';
 }

@@ -1,0 +1,392 @@
+{
+  "@@locale": "vi",
+
+  "appName": "Dopamine Diary",
+  "@appName": {},
+
+  "navHome": "Hôm nay",
+  "navAnalytics": "Phân tích",
+  "navDetox": "Detox",
+  "navMe": "Của tôi",
+
+  "tierCheap": "Rẻ tiền",
+  "tierMedium": "Trung bình",
+  "tierHealthy": "Lành mạnh",
+  "tierDeep": "Deep work",
+
+  "weekdayMon": "T2",
+  "weekdayTue": "T3",
+  "weekdayWed": "T4",
+  "weekdayThu": "T5",
+  "weekdayFri": "T6",
+  "weekdaySat": "T7",
+  "weekdaySun": "CN",
+
+  "commonRetry": "Thử lại",
+  "commonClose": "Đóng",
+  "commonCancel": "Hủy",
+  "commonSave": "Lưu",
+  "commonEdit": "Sửa",
+  "commonContinue": "Tiếp tục",
+  "commonBack": "Quay lại",
+  "commonStart": "Bắt đầu",
+  "commonStop": "Dừng",
+  "commonError": "Có lỗi",
+
+  "durationMinutes": "{n}p",
+  "@durationMinutes": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+  "durationHours": "{n}h",
+  "@durationHours": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+  "durationHoursMinutes": "{h}h{m}p",
+  "@durationHoursMinutes": {
+    "placeholders": {
+      "h": {"type": "int"},
+      "m": {"type": "int"}
+    }
+  },
+  "durationDaysHours": "{d}d {h}h",
+  "@durationDaysHours": {
+    "placeholders": {
+      "d": {"type": "int"},
+      "h": {"type": "int"}
+    }
+  },
+  "durationDaysHoursShort": "{d}n {h}h",
+  "@durationDaysHoursShort": {
+    "placeholders": {
+      "d": {"type": "int"},
+      "h": {"type": "int"}
+    }
+  },
+  "durationHoursMinShort": "{h}h {m}p",
+  "@durationHoursMinShort": {
+    "placeholders": {
+      "h": {"type": "int"},
+      "m": {"type": "int"}
+    }
+  },
+  "minutesValue": "{n} phút",
+  "@minutesValue": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+
+  "homeGreetingMorning": "Chào buổi sáng",
+  "homeGreetingAfternoon": "Chào buổi chiều",
+  "homeGreetingEvening": "Chào buổi tối",
+  "homeErrorTitle": "Có gì đó chưa ổn",
+  "homeQuickLogCta": "Ghi nhanh hoạt động",
+  "homeTodayDistribution": "PHÂN BỔ HÔM NAY",
+  "homeTodayMinutes": "{n} phút",
+  "@homeTodayMinutes": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+  "homeRecentSection": "Gần đây",
+  "homeScoreExcellent": "Xuất sắc",
+  "homeScoreBalanced": "Cân bằng tốt",
+  "homeScoreOk": "Khá ổn",
+  "homeScoreAdjust": "Cần điều chỉnh",
+  "homeScoreAttention": "Cần chú ý",
+  "homeDeltaSame": "Bằng hôm qua",
+  "homeDeltaCompare": "{sign}{delta} so với hôm qua",
+  "@homeDeltaCompare": {
+    "placeholders": {
+      "sign": {"type": "String"},
+      "delta": {"type": "int"}
+    }
+  },
+  "homeStreakDays": "Chuỗi {days} ngày",
+  "@homeStreakDays": {
+    "placeholders": {"days": {"type": "int"}}
+  },
+  "homeStreakSubtitle": "Đang giữ phong độ cân bằng",
+  "homeDetoxBannerTitle": "Đang detox",
+  "homeDetoxBannerRemaining": "Còn {remaining} / {total} ngày",
+  "@homeDetoxBannerRemaining": {
+    "placeholders": {
+      "remaining": {"type": "String"},
+      "total": {"type": "int"}
+    }
+  },
+  "homeDetoxExpired": "đã hết hạn",
+  "homeEmptyTodayTitle": "Chưa có hoạt động nào hôm nay",
+  "homeEmptyTodaySubtitle": "Tap \"Ghi nhanh\" để bắt đầu",
+  "homeScoreSlashHundred": "/100",
+
+  "emptyStateRetry": "Thử lại",
+
+  "quickLogTitle": "Ghi nhanh",
+  "quickLogQuestion": "Bạn vừa làm gì?",
+  "quickLogSubtitle": "Ghi nhanh trong 3 giây",
+  "quickLogRecentSection": "Gần đây · tap để lặp lại",
+  "quickLogActivitiesSection": "Hoạt động",
+  "quickLogVoiceCta": "Ghi bằng giọng nói",
+  "durationSheetQuestion": "Đã làm bao lâu?",
+  "durationSheetSaveLabel": "Lưu ({duration})",
+  "@durationSheetSaveLabel": {
+    "placeholders": {"duration": {"type": "String"}}
+  },
+
+  "voiceLogTitle": "Ghi bằng giọng nói",
+  "voiceLogListening": "Đang nghe… {time}",
+  "@voiceLogListening": {
+    "placeholders": {"time": {"type": "String"}}
+  },
+  "voiceLogTapToStart": "Tap mic để bắt đầu",
+  "voiceLogDone": "Đã ghi xong",
+  "voiceLogTapToStop": "Tap lại để dừng",
+  "voiceLogReviewSubtitle": "Xem lại transcript bên dưới và lưu",
+  "voiceLogExample": "Ví dụ: \"Sáng nay mình chạy 30 phút\"",
+  "voiceLogReRecord": "Ghi lại",
+  "voiceLogSave": "Lưu",
+  "voiceLogTranscriptLabel": "TRANSCRIPT",
+  "voiceLogAiUnderstoodLabel": "AI ĐÃ HIỂU LÀ",
+  "voiceLogMockTranscript": "Sáng nay mình chạy bộ 30 phút ở công viên, cảm thấy khá ổn.",
+  "voiceLogMockActivity": "Chạy bộ",
+  "voiceLogMoodChip": "Mood {mood}",
+  "@voiceLogMoodChip": {
+    "placeholders": {"mood": {"type": "String"}}
+  },
+
+  "analyticsTitle": "Phân tích",
+  "analyticsErrorTitle": "Không tải được dữ liệu",
+  "analyticsScore7Days": "SCORE 7 NGÀY",
+  "analyticsMetricCheap": "Dopamine rẻ tuần",
+  "analyticsMetricDeep": "Deep work tuần",
+  "analyticsInsightWeekendTitle": "Cuối tuần điểm thấp hơn ngày thường",
+  "analyticsInsightWeekendDesc": "Có vẻ thứ 7 chủ nhật bạn dành nhiều thời gian cho dopamine rẻ. Hãy thử lên kế hoạch một hoạt động sâu cuối tuần này.",
+  "analyticsInsightExerciseTitle": "Ngày bạn tập thể dục có score cao hơn",
+  "analyticsInsightExerciseDesc": "Các ngày bạn log \"Đi bộ\" hoặc \"Tập gym\", score trung bình cao hơn 18% so với ngày bình thường.",
+  "analyticsWeeklyReviewCta": "Xem tổng kết tuần",
+  "insightLabelAi": "AI GỢI Ý",
+  "insightLabelPattern": "PATTERN",
+
+  "weeklyReviewWeekLabel": "TUẦN {week} · {year}",
+  "@weeklyReviewWeekLabel": {
+    "placeholders": {
+      "week": {"type": "int"},
+      "year": {"type": "int"}
+    }
+  },
+  "weeklyReviewTitle": "Tuần của bạn",
+  "weeklyReviewReclaimedLabel": "Bạn đã giành lại",
+  "weeklyReviewReclaimedFrom": "từ short video so với mức trung bình",
+  "weeklyReviewHighlightsLabel": "HIGHLIGHTS",
+  "weeklyReviewPatternLabel": "PATTERN ĐÃ HỌC",
+  "weeklyReviewPatternDesc": "Ngày bạn tập thể dục → score cao hơn 34%. Đó là đòn bẩy lớn nhất của tuần này. Giữ vững nhịp tập thể dục là cách rẻ nhất để cân bằng dopamine.",
+  "weeklyReviewGoalsLabel": "MỤC TIÊU TUẦN SAU",
+  "weeklyReviewGoal1": "Giữ ≥ 4 ngày tập thể dục",
+  "weeklyReviewGoal2": "Ngày tốt nhất: {day} — lặp lại routine",
+  "@weeklyReviewGoal2": {
+    "placeholders": {"day": {"type": "String"}}
+  },
+  "weeklyReviewGoal3": "Dopamine rẻ ≤ 1h45p/ngày",
+  "weeklyReviewShareCta": "Chia sẻ với bạn bè",
+  "weeklyReviewShareUnavailable": "Tính năng chia sẻ sẽ có ở bản sau",
+  "weeklyReviewHighlightExercise": "Tập thể dục {done}/{total} ngày",
+  "@weeklyReviewHighlightExercise": {
+    "placeholders": {
+      "done": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "weeklyReviewHighlightDeep": "Deep work {duration} cả tuần",
+  "@weeklyReviewHighlightDeep": {
+    "placeholders": {"duration": {"type": "String"}}
+  },
+  "weeklyReviewHighlightScore": "Score trung bình {avg}/100",
+  "@weeklyReviewHighlightScore": {
+    "placeholders": {"avg": {"type": "int"}}
+  },
+
+  "detoxTitle": "Detox",
+  "detoxIdleTitle": "Reset dopamine của bạn",
+  "detoxIdleDesc": "Một phiên detox 24h, 7 ngày, hoặc 30 ngày để receptor dopamine phục hồi. Tạm xa short video, mạng xã hội — thay bằng đọc, tập thể dục, gặp người thật.",
+  "detoxIdleStartCta": "Bắt đầu detox",
+  "detoxRunningHeader": "DETOX MODE · ĐANG RESET",
+  "detoxRunningSubtitle": "còn lại / {totalDays} ngày",
+  "@detoxRunningSubtitle": {
+    "placeholders": {"totalDays": {"type": "int"}}
+  },
+  "detoxReasonLabel": "TẠI SAO BẠN DETOX",
+  "detoxBlockedLabel": "ĐANG CHẶN",
+  "detoxQuoteText": "\"Cảm giác khó chịu khi cai dopamine rẻ chính là dấu hiệu receptor đang hồi phục. Hãy ở lại với nó.\"",
+  "detoxQuoteAuthor": "— Anna Lembke, Dopamine Nation",
+  "detoxEmergencyCta": "Tôi đang muốn relapse — giúp tôi",
+  "detoxEndEarly": "Kết thúc sớm",
+  "detoxConfirmEndTitle": "Kết thúc detox sớm?",
+  "detoxConfirmEndContent": "Bạn có chắc muốn dừng phiên detox? Không phán xét gì — đôi khi dừng để học cũng là tốt.",
+  "detoxConfirmEndContinue": "Tiếp tục detox",
+  "detoxConfirmEndConfirm": "Kết thúc",
+
+  "detoxSetupTitle": "Bắt đầu detox",
+  "detoxSetupStep1": "1. Chọn độ dài",
+  "detoxSetupStep2": "2. Độ nghiêm khắc",
+  "detoxSetupStep3": "3. Apps cần chặn",
+  "detoxSetupStep4": "4. Tại sao bạn muốn detox?",
+  "detoxSetupReasonSubtitle": "Quan trọng — sẽ dùng để nhắc bạn khi muốn relapse.",
+  "detoxSetupReasonHint": "Vd: Muốn ngủ ngon hơn, có thời gian đọc sách, không bị giật thông báo cả ngày...",
+  "detoxSetupStartCta": "Bắt đầu {days} ngày detox",
+  "@detoxSetupStartCta": {
+    "placeholders": {"days": {"type": "int"}}
+  },
+  "detoxSetupStartedSnackbar": "Detox đã bắt đầu — giữ vững nhé",
+  "detoxSetupReasonRequiredSnackbar": "Hãy viết một câu lý do — sẽ dùng để nhắc bạn khi muốn relapse",
+  "detoxDuration24hLabel": "24 giờ",
+  "detoxDuration24hSub": "Beginner",
+  "detoxDuration7dLabel": "7 ngày",
+  "detoxDuration7dSub": "Đề xuất",
+  "detoxDuration30dLabel": "30 ngày",
+  "detoxDuration30dSub": "Hardcore",
+  "detoxStrictnessLight": "Nhẹ",
+  "detoxStrictnessMedium": "Vừa",
+  "detoxStrictnessHard": "Cứng",
+  "detoxStrictnessLightDesc": "Nhẹ: chỉ nhắc nhở khi mở app cheap. Vẫn có thể dùng nếu muốn.",
+  "detoxStrictnessMediumDesc": "Vừa: chặn mặc định + intervention popup mỗi lần mở. Có escape hatch.",
+  "detoxStrictnessHardDesc": "Cứng: chặn app cheap hoàn toàn. Có escape hatch chờ 20s nếu thật sự cần.",
+
+  "emergencyTitle": "Hít thở. Bạn không cô đơn.",
+  "emergencySubtitle": "Cảm giác sẽ qua — trung bình cravings chỉ kéo dài 15-20 phút.",
+  "emergencyNotFailureText": "Cravings là tín hiệu receptor đang hồi phục — đây không phải thất bại, mà là một phần của quá trình.",
+  "emergencyYourReasonLabel": "LÝ DO BẠN BẮT ĐẦU",
+  "emergencyTryNowLabel": "THỬ NGAY",
+  "emergencyActionWaterTitle": "Uống một cốc nước",
+  "emergencyActionWaterDesc": "Sự thay đổi nhỏ phá vỡ vòng lặp",
+  "emergencyActionExerciseTitle": "10 cái jumping jack",
+  "emergencyActionExerciseDesc": "Nâng dopamine tự nhiên trong 30s",
+  "emergencyActionBuddyTitle": "Gọi buddy",
+  "emergencyActionBuddyDesc": "Bạn không phải tự mình chống cự",
+  "emergencyReflectionLabel": "PHẢN CHIẾU",
+  "emergencyReflectionQuestion": "Bạn thực sự đang cảm thấy gì?",
+  "emergencyReflectionDesc": "Mệt? Cô đơn? Chán? Lo lắng? Cravings thường là tín hiệu cho một nhu cầu khác — không phải thiếu dopamine.",
+  "breathingInhale": "Hít vào",
+  "breathingHold": "Giữ",
+  "breathingExhale": "Thở ra",
+
+  "interventionClose": "Đóng",
+  "interventionTitle": "Khoan đã 👋",
+  "interventionSubtitle": "Bạn vừa định mở {app} lần thứ 4 trong giờ qua.",
+  "@interventionSubtitle": {
+    "placeholders": {"app": {"type": "String"}}
+  },
+  "interventionTodayLabel": "HÔM NAY",
+  "interventionTryLabel": "THỬ THAY BẰNG",
+  "interventionSuggestionWalkTitle": "Đi bộ ngắn",
+  "interventionSuggestionWalkDuration": "10 phút",
+  "interventionSuggestionPodcastTitle": "Nghe podcast",
+  "interventionSuggestionPodcastDuration": "15 phút",
+  "interventionSuggestionJournalTitle": "Viết journal",
+  "interventionSuggestionJournalDuration": "5 phút",
+  "interventionOpenAnyway": "Vẫn muốn mở {app}",
+  "@interventionOpenAnyway": {
+    "placeholders": {"app": {"type": "String"}}
+  },
+  "interventionOpenAnywayWait": "Vẫn muốn mở {app} (chờ 20s)",
+  "@interventionOpenAnywayWait": {
+    "placeholders": {"app": {"type": "String"}}
+  },
+  "interventionWaitSeconds": "Chờ {seconds}s…",
+  "@interventionWaitSeconds": {
+    "placeholders": {"seconds": {"type": "int"}}
+  },
+
+  "onboardingStepIndicator": "{step}/{total}",
+  "@onboardingStepIndicator": {
+    "placeholders": {
+      "step": {"type": "int"},
+      "total": {"type": "int"}
+    }
+  },
+  "onboardingFinishCta": "Bắt đầu sử dụng",
+  "onboardingStep1Title": "Chào mừng đến với\nDopamine Diary",
+  "onboardingStep1Desc": "Một app giúp bạn cân bằng giữa dopamine rẻ tiền (TikTok, Reels) và dopamine lành mạnh (tập thể dục, đọc, deep work) — không phán xét, không gây nghiện chính nó.",
+  "onboardingStep1SetupTime": "Mất ~2 phút để setup",
+  "onboardingStep2Title": "Không phải mọi\ndopamine đều xấu",
+  "onboardingStep2Desc": "Cơ thể bạn cần dopamine — nó là tín hiệu của niềm vui, học tập, kết nối. Vấn đề chỉ xuất hiện khi \"dopamine rẻ\" (10s, vô hạn, không nỗ lực) lấn át \"dopamine lành\" (cần nỗ lực, mang lại ý nghĩa).",
+  "tierExampleCheap": "TikTok, Reels, lướt vô thức",
+  "tierExampleMedium": "Xem phim, ăn vặt, gặp xã giao",
+  "tierExampleHealthy": "Tập thể dục, đi bộ, nấu ăn",
+  "tierExampleDeep": "Đọc sách, học, code, viết",
+  "onboardingStep3Title": "Phân loại theo BẠN",
+  "onboardingStep3Desc": "Kéo thả (hoặc tap để chọn) — tier mặc định không hợp với mọi người. TikTok với creator chuyên nghiệp là công việc, không phải dopamine rẻ.",
+  "onboardingDragHere": "Kéo thả vào đây",
+  "onboardingReassignQuestion": "Chuyển sang tier nào?",
+  "onboardingStep4Title": "Mỗi ngày 10 giây",
+  "onboardingStep4Desc": "Bạn không cần track mọi thứ. Mỗi tối, mở app, ghi nhanh những gì đã làm — vài giây thôi. Dopamine Diary sẽ tính score, pattern, gợi ý điều chỉnh nhẹ nhàng.",
+  "onboardingBulletPrivacy": "Dữ liệu lưu cục bộ trên máy bạn, mã hoá",
+  "onboardingBulletNoNotifications": "Không notification giật gân, không badge đỏ",
+  "onboardingBulletEmpathy": "Tone đồng cảm, không phán xét khi relapse",
+  "onboardingStep5Title": "Setup xong",
+  "onboardingStep5Desc": "Bạn có thể chỉnh lại tier bất cứ lúc nào trong \"Của tôi\" → \"Phân loại hoạt động\".",
+
+  "buddyTitle": "Buddy",
+  "buddyMockName": "Linh N.",
+  "buddyOnlineStatus": "Online · cùng goal detox 7 ngày",
+  "buddyTodayLabel": "HÔM NAY",
+  "buddyYourScoreLabel": "Bạn",
+  "buddyNotCompetitionNote": "Không phải thi đua — đây là support cùng nhau",
+  "buddyFeedSection": "NHẬT KÝ CỦA BẠN ẤY",
+  "buddyFeedRun": "Linh vừa chạy 5km",
+  "buddyFeedRead": "Linh đọc sách 45 phút",
+  "buddyFeedNeedSupport": "Linh cần động viên — đang muốn relapse",
+  "buddyTimeMinutesAgo": "{n} phút trước",
+  "@buddyTimeMinutesAgo": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+  "buddyTimeHoursAgo": "{n} giờ trước",
+  "@buddyTimeHoursAgo": {
+    "placeholders": {"n": {"type": "int"}}
+  },
+  "buddySendEncouragement": "Gửi lời động viên",
+  "buddyInviteCta": "Mời thêm buddy",
+  "buddyInviteUnavailable": "Tính năng mời buddy sẽ có ở bản sau",
+  "buddySheetTitle": "Gửi cho Linh",
+  "buddySheetSubtitle": "Chọn message — sẽ gửi ngay tới buddy",
+  "buddyMessage1": "Bạn đang làm tốt — mình tin bạn",
+  "buddyMessage2": "Cảm giác này sẽ qua, mình ở đây",
+  "buddyMessage3": "Hãy uống nước, đi bộ 5 phút trước nhé",
+  "buddyMessage4": "Mình cũng từng vậy, không sao đâu",
+  "buddyMessageSent": "Đã gửi lời động viên 💜",
+
+  "settingsTitle": "Của tôi",
+  "settingsProfileName": "Bạn",
+  "settingsProfileMemberSince": "Thành viên từ tháng 5, 2026",
+  "settingsSectionCustomize": "TUỲ CHỈNH",
+  "settingsSectionThreshold": "NGƯỠNG CẢNH BÁO",
+  "settingsSectionBlockedApps": "CHẶN ỨNG DỤNG",
+  "settingsSectionAbout": "VỀ APP",
+  "settingsSectionLanguage": "NGÔN NGỮ",
+  "settingsTileTierClassification": "Phân loại hoạt động",
+  "settingsTileTierClassificationSub": "Chỉnh tier cho từng activity type",
+  "settingsTileBuddy": "Buddy",
+  "settingsTileBuddySub": "Accountability partner",
+  "settingsTilePrivacy": "Quyền riêng tư",
+  "settingsTilePrivacySub": "Dữ liệu mã hoá và lưu cục bộ trên máy",
+  "settingsTileAbout": "Về Dopamine Diary",
+  "settingsTileAboutSub": "Phiên bản 0.1.0 · MVP",
+  "settingsPrivacySnackbar": "Toàn bộ dữ liệu lưu trong Hive trên thiết bị, không upload",
+  "settingsAboutSnackbar": "Dopamine Diary v0.1.0",
+  "settingsThresholdLabel": "Dopamine rẻ tối đa/ngày",
+  "settingsThresholdValue": "{hours}h",
+  "@settingsThresholdValue": {
+    "placeholders": {"hours": {"type": "String"}}
+  },
+  "settingsThresholdDesc": "Khi vượt ngưỡng, Dopamine Diary sẽ gợi ý nhẹ — không chặn cứng.",
+  "settingsLanguageVietnamese": "Tiếng Việt",
+  "settingsLanguageEnglish": "English",
+  "settingsLanguageSystem": "Theo hệ thống",
+
+  "authLoginTitle": "Đăng nhập",
+  "authSignupTitle": "Đăng ký",
+  "authEmailHint": "Email",
+  "authPasswordHint": "Mật khẩu",
+  "authNameHint": "Tên",
+  "authLoginCta": "Đăng nhập",
+  "authSignupCta": "Tạo tài khoản",
+  "authToSignup": "Chưa có tài khoản? Đăng ký",
+  "authToLogin": "Đã có tài khoản? Đăng nhập",
+  "authMissingFields": "Vui lòng điền đầy đủ các trường"
+}
