@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5E54CE"/>
+      <stop offset="1" stop-color="#4B42A8"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="#FAF9F5"/>
+
+  <!-- tier bookmark tabs sticking out the right edge -->
+  <g>
+    <rect x="636" y="322" width="142" height="58" rx="16" fill="#E24B4A"/>
+    <rect x="636" y="420" width="142" height="58" rx="16" fill="#EF9F27"/>
+    <rect x="636" y="518" width="142" height="58" rx="16" fill="#97C459"/>
+    <rect x="636" y="616" width="142" height="58" rx="16" fill="#378ADD"/>
+  </g>
+
+  <!-- journal cover -->
+  <rect x="268" y="276" width="424" height="472" rx="46" fill="url(#cover)"/>
+
+  <!-- spiral binding dots -->
+  <g fill="#FAF9F5">
+    <circle cx="316" cy="338" r="13"/>
+    <circle cx="316" cy="404" r="13"/>
+    <circle cx="316" cy="470" r="13"/>
+    <circle cx="316" cy="536" r="13"/>
+    <circle cx="316" cy="602" r="13"/>
+    <circle cx="316" cy="668" r="13"/>
+  </g>
+
+  <!-- title lines on cover -->
+  <g fill="#EEEDFE">
+    <rect x="388" y="452" width="244" height="30" rx="15"/>
+    <rect x="388" y="510" width="244" height="30" rx="15" opacity="0.72"/>
+    <rect x="388" y="568" width="160" height="30" rx="15" opacity="0.5"/>
+  </g>
+
+  <!-- small spark mark, top of cover -->
+  <g transform="translate(470 366)">
+    <path d="M0 -40 C6 -14 14 -6 40 0 C14 6 6 14 0 40 C-6 14 -14 6 -40 0 C-14 -6 -6 -14 0 -40 Z" fill="#FFD98A"/>
+  </g>
+</svg>

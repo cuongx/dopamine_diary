@@ -572,6 +572,66 @@ abstract class AppLocalizations {
   /// **'Mood {mood}'**
   String voiceLogMoodChip(String mood);
 
+  /// No description provided for @voiceLogUnavailable.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thiết bị chưa hỗ trợ hoặc chưa cấp quyền micro / nhận dạng giọng nói.'**
+  String get voiceLogUnavailable;
+
+  /// No description provided for @voiceLogError.
+  ///
+  /// In vi, this message translates to:
+  /// **'Không nghe được — thử lại nhé.'**
+  String get voiceLogError;
+
+  /// No description provided for @voiceLogNoSpeech.
+  ///
+  /// In vi, this message translates to:
+  /// **'Chưa nghe thấy gì cả. Tap mic và nói thử lại.'**
+  String get voiceLogNoSpeech;
+
+  /// No description provided for @voiceLogParsing.
+  ///
+  /// In vi, this message translates to:
+  /// **'AI đang phân tích…'**
+  String get voiceLogParsing;
+
+  /// No description provided for @voiceLogParseError.
+  ///
+  /// In vi, this message translates to:
+  /// **'Không phân tích được — bạn có thể sửa lại khi lưu.'**
+  String get voiceLogParseError;
+
+  /// No description provided for @voiceLogReviewLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'KIỂM TRA & SỬA'**
+  String get voiceLogReviewLabel;
+
+  /// No description provided for @voiceLogNameLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Tên hoạt động'**
+  String get voiceLogNameLabel;
+
+  /// No description provided for @voiceLogTierLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Loại'**
+  String get voiceLogTierLabel;
+
+  /// No description provided for @voiceLogDurationLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Thời lượng'**
+  String get voiceLogDurationLabel;
+
+  /// No description provided for @voiceLogMoodLabel.
+  ///
+  /// In vi, this message translates to:
+  /// **'Cảm xúc'**
+  String get voiceLogMoodLabel;
+
   /// No description provided for @analyticsTitle.
   ///
   /// In vi, this message translates to:
@@ -1025,7 +1085,7 @@ abstract class AppLocalizations {
   /// No description provided for @emergencyActionBuddyTitle.
   ///
   /// In vi, this message translates to:
-  /// **'Gọi buddy'**
+  /// **'Gọi bạn đồng hành'**
   String get emergencyActionBuddyTitle;
 
   /// No description provided for @emergencyActionBuddyDesc.
@@ -1289,7 +1349,7 @@ abstract class AppLocalizations {
   /// No description provided for @buddyTitle.
   ///
   /// In vi, this message translates to:
-  /// **'Buddy'**
+  /// **'Bạn đồng hành'**
   String get buddyTitle;
 
   /// No description provided for @buddyMockName.
@@ -1367,13 +1427,13 @@ abstract class AppLocalizations {
   /// No description provided for @buddyInviteCta.
   ///
   /// In vi, this message translates to:
-  /// **'Mời thêm buddy'**
+  /// **'Mời thêm bạn đồng hành'**
   String get buddyInviteCta;
 
   /// No description provided for @buddyInviteUnavailable.
   ///
   /// In vi, this message translates to:
-  /// **'Tính năng mời buddy sẽ có ở bản sau'**
+  /// **'Tính năng mời bạn đồng hành sẽ có ở bản sau'**
   String get buddyInviteUnavailable;
 
   /// No description provided for @buddySheetTitle.
@@ -1385,7 +1445,7 @@ abstract class AppLocalizations {
   /// No description provided for @buddySheetSubtitle.
   ///
   /// In vi, this message translates to:
-  /// **'Chọn message — sẽ gửi ngay tới buddy'**
+  /// **'Chọn message — sẽ gửi ngay tới bạn đồng hành'**
   String get buddySheetSubtitle;
 
   /// No description provided for @buddyMessage1.
@@ -1481,13 +1541,13 @@ abstract class AppLocalizations {
   /// No description provided for @settingsTileBuddy.
   ///
   /// In vi, this message translates to:
-  /// **'Buddy'**
+  /// **'Bạn đồng hành'**
   String get settingsTileBuddy;
 
   /// No description provided for @settingsTileBuddySub.
   ///
   /// In vi, this message translates to:
-  /// **'Accountability partner'**
+  /// **'Người cùng giữ cam kết'**
   String get settingsTileBuddySub;
 
   /// No description provided for @settingsTilePrivacy.

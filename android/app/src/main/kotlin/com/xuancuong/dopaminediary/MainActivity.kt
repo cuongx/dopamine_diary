@@ -1,4 +1,4 @@
-package com.example.dopamine_diary
+package com.xuancuong.dopaminediary
 
 import io.flutter.embedding.android.FlutterActivity
 

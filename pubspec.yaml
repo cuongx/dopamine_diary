@@ -45,12 +45,14 @@ dependencies:
   intl: ^0.20.2
   internet_connection_checker_plus: ^2.2.0
   hive: ^4.0.0-dev.2
+  isar_flutter_libs: ^4.0.0-dev.14 # native Isar Core binaries for hive 4 (iOS/Android)
   path_provider: ^2.1.0
   google_fonts: ^6.2.1
   lucide_icons: ^0.257.0
   fl_chart: ^0.68.0
   equatable: ^2.0.5
   confetti: ^0.7.0
+  speech_to_text: ^7.0.0 # STT on-device cho Voice Log
 
 dev_dependencies:
   flutter_test:
@@ -65,26 +67,31 @@ dev_dependencies:
   flutter_launcher_icons: ^0.13.1
   flutter_native_splash: ^2.4.1
 
+dependency_overrides:
+  win32: ^5.5.4
 # ============ Launcher icons ============
-# Tạm dùng icon Flutter default cho MVP. Khi có app_icon.png:
-# 1. Drop file vào assets/icons/app_icon.png (1024×1024)
-# 2. Uncomment block dưới
-# 3. Chạy: dart run flutter_launcher_icons
-#
-# flutter_launcher_icons:
-#   android: true
-#   ios: true
-#   image_path: "assets/icons/app_icon.png"
-#   min_sdk_android: 21
-#   remove_alpha_ios: true
+# Logo "Diary Spark": sách mở + tia dopamine trên nền tím brand.
+# Nguồn SVG ở assets/icons/*.svg, PNG 1024 render kèm. Chạy lại:
+#   dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png" # full-bleed: iOS + Android legacy
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#4B42A8" # brand purple cho Android adaptive
+  adaptive_icon_foreground: "assets/icons/app_icon_foreground.png"
 
-# ============ Native splash (chỉ màu nền cream, không ảnh) ============
-# Splash nội dung (logo + tên app) render bằng widget Flutter sau khi app
-# khởi động — không bundle ảnh ở native splash. Chạy: dart run flutter_native_splash:create
+# ============ Native splash (logo "Diary Spark" trên nền tím brand) ============
+# Dùng lại ảnh foreground của app icon (book + spark, nền trong suốt) cho đồng bộ.
+# Chạy lại sau khi đổi: dart run flutter_native_splash:create
 flutter_native_splash:
-  color: "#FAF9F5"
+  color: "#4B42A8"
+  image: assets/images/logo/splash_logo_text.png # iOS + Android <12: logo + tên app
   android_12:
-    color: "#FAF9F5"
+    color: "#4B42A8"
+    # Android 12+ chỉ cho icon tròn ở giữa → dùng logo-only (chữ sẽ bị cắt)
+    image: assets/icons/app_icon_foreground.png
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

@@ -276,6 +276,39 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
+  String get voiceLogUnavailable =>
+      'Speech recognition isn\'t available, or mic/recognition permission was denied.';
+
+  @override
+  String get voiceLogError => 'Couldn\'t hear you — please try again.';
+
+  @override
+  String get voiceLogNoSpeech =>
+      'Didn\'t catch anything. Tap the mic and try again.';
+
+  @override
+  String get voiceLogParsing => 'AI is analyzing…';
+
+  @override
+  String get voiceLogParseError =>
+      'Couldn\'t analyze — you can still edit and save.';
+
+  @override
+  String get voiceLogReviewLabel => 'REVIEW & EDIT';
+
+  @override
+  String get voiceLogNameLabel => 'Activity name';
+
+  @override
+  String get voiceLogTierLabel => 'Type';
+
+  @override
+  String get voiceLogDurationLabel => 'Duration';
+
+  @override
+  String get voiceLogMoodLabel => 'Mood';
+
+  @override
   String get analyticsTitle => 'Analytics';
 
   @override

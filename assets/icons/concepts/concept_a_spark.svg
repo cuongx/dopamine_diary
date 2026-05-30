@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5E54CE"/>
+      <stop offset="1" stop-color="#463CA0"/>
+    </linearGradient>
+    <linearGradient id="spark" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFD98A"/>
+      <stop offset="1" stop-color="#EF9F27"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" fill="url(#bg)"/>
+
+  <!-- open book -->
+  <g>
+    <!-- left page -->
+    <path d="M512 624 L300 574 Q280 569 280 549 L280 430 Q280 412 300 417 L512 470 Z" fill="#FAF9F5"/>
+    <!-- right page -->
+    <path d="M512 624 L724 574 Q744 569 744 549 L744 430 Q744 412 724 417 L512 470 Z" fill="#FFFFFF"/>
+    <!-- spine -->
+    <path d="M512 470 L512 624" stroke="#CFCBE8" stroke-width="7" stroke-linecap="round"/>
+    <!-- left text lines -->
+    <g stroke="#C7C3E0" stroke-width="8" stroke-linecap="round">
+      <line x1="338" y1="474" x2="476" y2="508"/>
+      <line x1="338" y1="508" x2="476" y2="542"/>
+      <line x1="338" y1="542" x2="452" y2="570"/>
+    </g>
+    <!-- right text lines -->
+    <g stroke="#C7C3E0" stroke-width="8" stroke-linecap="round">
+      <line x1="548" y1="508" x2="686" y2="474"/>
+      <line x1="548" y1="542" x2="686" y2="508"/>
+      <line x1="572" y1="570" x2="686" y2="542"/>
+    </g>
+  </g>
+
+  <!-- dopamine spark rising from the book -->
+  <g transform="translate(512 312)">
+    <path d="M0 -132 C20 -44 44 -20 132 0 C44 20 20 44 0 132 C-20 44 -44 20 -132 0 C-44 -20 -20 -44 0 -132 Z" fill="url(#spark)"/>
+    <circle cx="150" cy="-150" r="17" fill="#FFE3A6"/>
+    <circle cx="-156" cy="-96" r="11" fill="#FFE3A6"/>
+  </g>
+</svg>

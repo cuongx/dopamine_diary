@@ -275,6 +275,39 @@ class AppLocalizationsVi extends AppLocalizations {
   }
 
   @override
+  String get voiceLogUnavailable =>
+      'Thiết bị chưa hỗ trợ hoặc chưa cấp quyền micro / nhận dạng giọng nói.';
+
+  @override
+  String get voiceLogError => 'Không nghe được — thử lại nhé.';
+
+  @override
+  String get voiceLogNoSpeech =>
+      'Chưa nghe thấy gì cả. Tap mic và nói thử lại.';
+
+  @override
+  String get voiceLogParsing => 'AI đang phân tích…';
+
+  @override
+  String get voiceLogParseError =>
+      'Không phân tích được — bạn có thể sửa lại khi lưu.';
+
+  @override
+  String get voiceLogReviewLabel => 'KIỂM TRA & SỬA';
+
+  @override
+  String get voiceLogNameLabel => 'Tên hoạt động';
+
+  @override
+  String get voiceLogTierLabel => 'Loại';
+
+  @override
+  String get voiceLogDurationLabel => 'Thời lượng';
+
+  @override
+  String get voiceLogMoodLabel => 'Cảm xúc';
+
+  @override
   String get analyticsTitle => 'Phân tích';
 
   @override
@@ -532,7 +565,7 @@ class AppLocalizationsVi extends AppLocalizations {
   String get emergencyActionExerciseDesc => 'Nâng dopamine tự nhiên trong 30s';
 
   @override
-  String get emergencyActionBuddyTitle => 'Gọi buddy';
+  String get emergencyActionBuddyTitle => 'Gọi bạn đồng hành';
 
   @override
   String get emergencyActionBuddyDesc => 'Bạn không phải tự mình chống cự';
@@ -683,7 +716,7 @@ class AppLocalizationsVi extends AppLocalizations {
       'Bạn có thể chỉnh lại tier bất cứ lúc nào trong \"Của tôi\" → \"Phân loại hoạt động\".';
 
   @override
-  String get buddyTitle => 'Buddy';
+  String get buddyTitle => 'Bạn đồng hành';
 
   @override
   String get buddyMockName => 'Linh N.';
@@ -727,16 +760,18 @@ class AppLocalizationsVi extends AppLocalizations {
   String get buddySendEncouragement => 'Gửi lời động viên';
 
   @override
-  String get buddyInviteCta => 'Mời thêm buddy';
+  String get buddyInviteCta => 'Mời thêm bạn đồng hành';
 
   @override
-  String get buddyInviteUnavailable => 'Tính năng mời buddy sẽ có ở bản sau';
+  String get buddyInviteUnavailable =>
+      'Tính năng mời bạn đồng hành sẽ có ở bản sau';
 
   @override
   String get buddySheetTitle => 'Gửi cho Linh';
 
   @override
-  String get buddySheetSubtitle => 'Chọn message — sẽ gửi ngay tới buddy';
+  String get buddySheetSubtitle =>
+      'Chọn message — sẽ gửi ngay tới bạn đồng hành';
 
   @override
   String get buddyMessage1 => 'Bạn đang làm tốt — mình tin bạn';
@@ -785,10 +820,10 @@ class AppLocalizationsVi extends AppLocalizations {
       'Chỉnh tier cho từng activity type';
 
   @override
-  String get settingsTileBuddy => 'Buddy';
+  String get settingsTileBuddy => 'Bạn đồng hành';
 
   @override
-  String get settingsTileBuddySub => 'Accountability partner';
+  String get settingsTileBuddySub => 'Người cùng giữ cam kết';
 
   @override
   String get settingsTilePrivacy => 'Quyền riêng tư';
